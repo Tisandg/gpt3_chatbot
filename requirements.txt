@@ -1,0 +1,4 @@
+openai
+twilio
+flask
+python-dotenv
