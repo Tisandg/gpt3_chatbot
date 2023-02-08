@@ -5,7 +5,7 @@ import os
 import openai
 
 load_dotenv()
-open.api_key = os.getenv('OPENAI_API_KEY')
+openai.api_key = os.getenv('OPENAI_API_KEY')
 completion = openai.Completion()
 
 import os
@@ -30,7 +30,7 @@ def ask(question, chat_log=None):
     max_tokens=1000,
     top_p=1,
     frequency_penalty=0,
-    presence_penalty=0
+    presence_penalty=0,
     stop=['\n']
   )
   story = response['choices'][0]['text']
